@@ -1,0 +1,7 @@
+Web Server + AI application
+
+MVC pattern
+Model - DB access, Business logic, AI
+View - 화면에 보이게 하는 html (css, js)
+Control - 라우팅, 사용자가 입력한 파라미터 처리, view 파일을 랜더링해서 클라이언트에 내려보내는 법
+-> 전부 다른 파일에 있음
