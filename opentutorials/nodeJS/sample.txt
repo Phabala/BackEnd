@@ -1,18 +1,1 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-Vestibulum lorem sed risus ultricies tristique nulla aliquet. 
-Dictum sit amet justo donec enim diam vulputate. 
-Volutpat ac tincidunt vitae semper. 
-Aliquet nibh praesent tristique magna sit amet. 
-Mauris vitae ultricies leo integer malesuada nunc vel. 
-Auctor urna nunc id cursus metus aliquam eleifend. 
-Nunc sed id semper risus in hendrerit gravida rutrum quisque. 
-Tortor vitae purus faucibus ornare suspendisse sed nisi. 
-Sed turpis tincidunt id aliquet risus feugiat. 
-Congue eu consequat ac felis donec et odio. 
-Ac turpis egestas sed tempus urna et pharetra. 
-Quis eleifend quam adipiscing vitae proin sagittis nisl. 
-Sagittis eu volutpat odio facilisis mauris sit amet massa. 
-Lacus viverra vitae congue eu consequat. 
-Elit ut aliquam purus sit amet luctus venenatis lectus. 
-Eget duis at tellus at urna. 
-Proin nibh nisl condimentum id venenatis a condimentum vitae.
+B
