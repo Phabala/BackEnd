@@ -42,6 +42,10 @@ $	문자열의 끝을 의미함.
 {n}	반복되는 횟수를 지정함.
 {m,n}	반복되는 횟수의 최솟값과 최댓값을 지정함.
 
-위에 읽어보고 이어서 할 차례
-
 */
+
+SELECT * FROM Reservation
+WHERE Name REGEXP '^홍|산$'; -- 홍으로 시작하거나 산으로 끝나는 것
+
+SELECT * FROM Reservation
+WHERE Name NOT REGEXP '^홍|산$'; -- 반대되는 것
