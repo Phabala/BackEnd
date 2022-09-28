@@ -1,0 +1,43 @@
+17라인: app 변수를 선언한다. 이 변수는 http라는 module에서 createServer 라는 메소드를 사용하여 선언한다.
+익명함수로 매개변수 두개를 선언한다. request, response
+
+21라인: path가 / 라면 { 중괄호(1) 시작함 
+    만약 queryData.id 가 undefined 라면 
+    mysql.createConnetion() 에서 가져온 변수 db에서 query()를 실행한다.
+    그 쿼리의 내용은 db.query(`SELECT * FROM topic', function(error, topics) {
+        var title = 'Welcome'; // 얘를 적어주면 그냥 title 에 왜 'Welcome'이 뜨지? => 아, 밑에서 title을 사용하는구나.
+        var description = 'Hello, Node.js';
+        var list = template.list(topics);
+        var html = template.HTML(title, list,
+        `<h2>${title}</h2>${description}`,
+        `<a href="/create">create</a>`
+    );
+    })
+
+    } else {
+        db.query(`SELECT * FROM topic`, function(error, topics) {
+            if(error) {
+                throw error; // 에러가 있는지 없는지 확인.
+            }
+            db.query(`SELECT * FROM topic WHERE id = ?`, [queryData.id], function(error2, topic) {
+                if(error2) {
+                    throw error2; // 에러가 있는지 없는지 확인.
+                }
+            var title = topic[0].title;
+            var description = topic[0].description;
+            var list = template.list(topics);
+            var html = template.HTML(title, list, // 이 세번째 변수에 body가 들어감. 네번째 변수에는 control이 들어감.
+                `<h2>${title}</h2>${description}`,
+                `<a href="/create">create</a>
+                    <a href="/update?id=${queryData.id}">update</a>
+                    <form action="delete_process" method="post">
+                        <input type="hidden" name="id" value="${queryData.id}">
+                        <input type="submit" value="delete">
+                    </form>`
+                );
+            response.writeHead(200);
+            response.end(html);
+            })
+        });
+
+중괄호(1) 끝남}
