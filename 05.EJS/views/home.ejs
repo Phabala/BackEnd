@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- HTML5 에서는 <style>태그의 type 속성 기본값이 "text/css"로 설정되기 때문에, 더 이상 type 속성을 반드시 명시할 필요는 없음. media="screen"은 컴퓨터나 태블릿, 스마트폰 등의 스크린임을 명시함.-->
+    <style type="text/css" media="screen"> 
+        body {
+            background-color: skyblue;
+            text-decoration-color: white;
+            font-size : 5em;
+        }
+    </style> 
+</head>
+<body>
+    Hobbies of <%=data.name%> are :<br/>
+    <ul>
+        <%data.hobbies.forEach((item) => {%>
+            <li><%=item%></li>
+            <%});%>
+        })
+    </ul>
+</body>
+</html>
